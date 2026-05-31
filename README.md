@@ -14,7 +14,7 @@ CorePatch oferuje kilka kluczowych funkcji pozwalających ominąć standardowe k
 
 **Zezwól na obniżenie wersji**:
 <br>Umożliwia zainstalowanie starszej wersji aplikacji, eliminując błąd: 
-<br>![](https://img.shields.io/badge/INFO-INSTALL%5FFAILED\\_VERSION%5FDOWNGRADE-green)
+<br>![](https://img.shields.io/badge/INFO-INSTALL%5FFAILED__VERSION%5FDOWNGRADE-green)
 
 
 **Wyłącz weryfikację skrótu**:
