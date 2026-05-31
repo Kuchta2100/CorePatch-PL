@@ -3,7 +3,7 @@
   <string name="module_description">Łatka rdzenia Androida 9-16</string>
   <string name="corepatch">Ta wersja jest przeznaczona wyłącznie dla systemu Android 9&#x2013;16.\nUżywaj najnowszej wersji aplikacji Vector.</string>
   <string name="downgr">Zezwól na obniżenie wersji aplikacji</string>
-  <string name="downgr_summary">Zezwala na zainstalowanie starszej wersji aplikacji eliminując błąd: <br></b>
+  <string name="downgr_summary">Zezwala na zainstalowanie starszej wersji aplikacji eliminując błąd: \n</b>
 INSTALL_FAILED_VERSION_DOWNGRADE</b>
 </string>
   <string name="authcreak">Wyłącz weryfikację skrótu</string>
