@@ -1,8 +1,8 @@
-name: Core Patch PL
+name: Core Patch
 
 on:
   push:
-    branches: [ PL ]
+    branches: [ main ]
   pull_request:
   workflow_dispatch:
 
