@@ -23,7 +23,7 @@ jobs:
         cache: 'gradle'
 
     - name: Write key
-      if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+      if: github.event_name != 'pull_request' && github.ref == 'refs/heads/PL'
       run: |
         if [ ! -z "${{ secrets.SIGNING_KEY }}" ]; then
         echo releaseStorePassword='${{ secrets.KEY_STORE_PASSWORD }}' >> gradle.properties
@@ -42,7 +42,7 @@ jobs:
         name: CorePatch-PL
         path: app/build/outputs/apk
     - name: Release
-      if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+      if: github.event_name != 'pull_request' && github.ref == 'refs/heads/PL'
       uses: softprops/action-gh-release@v1
       with:
         files: app/build/outputs/apk/**/*.apk
