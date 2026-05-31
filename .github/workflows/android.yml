@@ -41,3 +41,13 @@ jobs:
       with:
         name: CorePatch-PL
         path: app/build/outputs/apk
+            - name: Release
+      if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+      uses: softprops/action-gh-release@v1
+      with:
+        files: app/build/outputs/apk/**/*.apk
+        tag_name: v.4.9.${{ github.run_number }}
+        generate_release_notes: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
