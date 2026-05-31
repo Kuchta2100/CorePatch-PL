@@ -1,4 +1,4 @@
-name: Android CI
+name: Core Patch PL
 
 on:
   push:
