@@ -66,7 +66,7 @@ Specjalne podziękowania dla następujących osób za ich wkład w projekt:
 ### Społeczność i wsparcie
 
 Dołącz do społeczności na [Telegramie](https://t.me/core_patch_chat), aby podyskutować o module i uzyskać pomoc.  
-Jeśli uważasz ten projekt za przydatny, rozważ wsparcie programisty (pomagam.pl/ahkhwy).
+Jeśli uważasz ten projekt za przydatny, rozważ wsparcie programisty poprzez [pomagam.pl](pomagam.pl/ahkhwy).
 
 ### Licencja
 
