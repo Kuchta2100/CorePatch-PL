@@ -36,8 +36,8 @@ CorePatch offers several key features to bypass standard Android installation ch
 **Bypass lock**:
 <br>Bypasses the installation blocklist on certain devices, e.g., Nothing Phone.
 
-**Skip shared user verification**:
-<br>Allows installing apps with a signature different from their shared user.
+**Skip shared profile verification**:
+<br>Allows installing apps that share the same system account, even if they have different signatures.
 <br>![](https://img.shields.io/badge/INFO-Disable%20signature%20comparison-blue)
 <br>![](https://img.shields.io/badge/must%20also%20be%20enabled-blue)
 
