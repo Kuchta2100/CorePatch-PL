@@ -1,17 +1,17 @@
 <resources>
   <string name="app_name">Core Patch</string>
   <string name="module_description">Łatka rdzenia Androida 9-16</string>
-  <string name="corepatch">Ta wersja jest przeznaczona wyłącznie dla systemu Android 9&#x2013;16.\nUżywaj najnowszej wersji aplikacji Vector.</string>
+  <string name="corepatch"><b>Ta wersja jest przeznaczona wyłącznie dla systemu Android 9&#x2013;16.</b>\n<b>Używaj najnowszej wersji aplikacji Vector.</b></string>
   <string name="downgr">Zezwól na obniżenie wersji aplikacji</string>
     <string name="downgr_summary">Zezwala na zainstalowanie starszej wersji aplikacji eliminując błąd: \n<b>INSTALL_FAILED_VERSION_DOWNGRADE</b></string>
   <string name="authcreak">Wyłącz weryfikację skrótu</string>
-  <string name="authcreak_summary">Umożliwia instalację aplikacji po zmodyfikowaniu pliku APK \n(ignoruje błąd nieprawidłowego skrótu)</string>
+  <string name="authcreak_summary">Umożliwia instalację aplikacji po zmodyfikowaniu pliku APK. \n<b>Ignoruje błąd nieprawidłowego skrótu</b></string>
   <string name="digestCreak">Wyłącz porównywanie podpisów</string>
   <string name="digestCreak_summary">Zezwala na ponowną instalację aplikacji z innymi podpisami</string>
   <string name="exactSigCheck">Wyłącz dokładne dopasowanie podpisu</string>
-  <string name="exactSigCheck_summary">Wyłącza dokładne dopasowanie podpisu między pakietami APK, umożliwiając instalacje, w których każdy fragment APK ma inny podpis. \nWłączaj tylko w razie potrzeby!</string>
+  <string name="exactSigCheck_summary">Wyłącza dokładne dopasowanie podpisu między pakietami APK, umożliwiając instalacje, w których każdy fragment APK ma inny podpis. \n<b>Włączaj tylko w razie potrzeby!</b></string>
   <string name="UsePreSig">Użyj zainstalowanych podpisów</string>
-  <string name="UsePreSig_summary">Zawsze podczas instalacji będą używane podpisy już zainstalowanych aplikacji.\nJest to niezwykle <b>niebezpieczne</b>.\nWłączaj tylko wtedy, gdy jest to absolutnie konieczne!</string>
+  <string name="UsePreSig_summary">Zawsze podczas instalacji będą używane podpisy już zainstalowanych aplikacji.\nJest to niezwykle <b>niebezpieczne</b>.\n<b>Włączaj tylko wtedy, gdy jest to absolutnie konieczne!</b></string>
   <string name="settings">Ustawienia</string>
   <string name="ignore">Ignoruj</string>
   <string name="config_error">Inicjalizacja konfiguracji nie powiodła się</string>
@@ -21,7 +21,7 @@
   <string name="miui_usepresig_warn">Korzystanie z zainstalowanych podpisów nie będzie działać w systemie HyperOS, ponieważ jego struktura za bardzo się zmienia. Nie mamy czasu na zaimplementowanie obsługi.</string>
   <string name="usepresig_warn">!! Każdy plik APK może nadpisać zainstalowaną aplikację !!\nZachowaj ostrożność instalując pliki APK z nieznanych źródeł.</string>
   <string name="shared_user_title">Pomiń weryfikację wspólnego profilu</string>
-  <string name="shared_user_summary">Umożliwia instalację aplikacji współdzielących to samo konto systemowe, nawet jeśli mają różne podpisy. (<b>„Wyłącz porównywanie podpisów” musi być również włączone</b>).</string>
+  <string name="shared_user_summary">Umożliwia instalację aplikacji współdzielących to samo konto systemowe, nawet jeśli mają różne podpisy. n\<b>Wyłącz porównywanie podpisów musi być również włączone</b>.</string>
   <string name="disable_verification_agent_title">Wyłącz agenta weryfikacji pakietów</string>
   <string name="disable_verification_agent_summary">np. Google Play Protect</string>
 </resources>
