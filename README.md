@@ -23,7 +23,7 @@ CorePatch oferuje kilka kluczowych funkcji pozwalających ominąć standardowe k
 <br>Zezwala na ponowną instalację aplikacji z innymi podpisami
 
 **Wyłącz dokładne dopasowanie podpisu**:
-<br>Wyłącza dokładne dopasowanie podpisu między pakietami APK, umożliwiając instalacje, w których każdy fragment APK ma inny podpis. <br>**Włączaj tylko w razie potrzeby!**
+<br>Wyłącza dokładne dopasowanie podpisu między pakietami APK, umożliwiając instalacje, w których każdy fragment APK ma inny podpis. <br>**-Włączaj tylko w razie potrzeby!**
 
 **Użyj zainstalowanych podpisów**:
 <br>Zawsze podczas instalacji będą używane podpisy już zainstalowanych aplikacji.
