@@ -13,8 +13,7 @@ Ta wersja jest przeznaczona wyłącznie dla systemu Android 9–16.
 CorePatch oferuje kilka kluczowych funkcji pozwalających ominąć standardowe kontrole instalacji systemu Android.
 
 **Zezwól na obniżenie wersji**:
-<br>Umożliwia zainstalowanie starszej wersji aplikacji, eliminując błąd: <br>
-https://img.shields.io/badge/INFO-INSTALL%20FAILED%20VERSION%20DOWNGRADE-green
+<br>Umożliwia zainstalowanie starszej wersji aplikacji, eliminując błąd: <br>! [] (https://img.shields.io/badge/INFO-INSTALL%20FAILED%20VERSION%20DOWNGRADE-green)
 
 
 **Wyłącz weryfikację skrótu**:
