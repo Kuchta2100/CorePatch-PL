@@ -2,9 +2,12 @@ name: CorePatch-PL
 
 on:
   push:
-    branches: [ PL ]
+    branches: [ main ]
   pull_request:
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
