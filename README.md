@@ -27,7 +27,7 @@ CorePatch oferuje kilka kluczowych funkcji pozwalających ominąć standardowe k
 
 **Użyj zainstalowanych podpisów**:
 <br>Zawsze podczas instalacji będą używane podpisy już zainstalowanych aplikacji.
-<br>**> [!CAUTION]Jest to niezwykle niebezpieczne.**
+<br>>[!CAUTION]**Jest to niezwykle niebezpieczne.**
 <br>**Włączaj tylko wtedy, gdy jest to absolutnie konieczne!**
 
 **Obejście blokady**:
