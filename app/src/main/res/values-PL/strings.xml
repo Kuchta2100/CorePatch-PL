@@ -20,8 +20,8 @@
   <string name="bypassBlock_summary">Pomija listę blokowanych instalacji na niektórych urządzeniach, np. Nothing Phone.</string>
   <string name="miui_usepresig_warn">Korzystanie z zainstalowanych podpisów nie będzie działać w systemie HyperOS, ponieważ jego struktura za bardzo się zmienia. Nie mamy czasu na zaimplementowanie obsługi.</string>
   <string name="usepresig_warn">!! Każdy plik APK może nadpisać zainstalowaną aplikację !!\nZachowaj ostrożność instalując pliki APK z nieznanych źródeł.</string>
-  <string name="shared_user_title">Pomiń weryfikację wspólnego użytkownika</string>
-  <string name="shared_user_summary">Umożliwia instalację aplikacji z podpisem innym niż współdzielony przez nich użytkownik (<b>\"Wyłącz porównywanie podpisów&#x201D; musi być również włączone</b>).</string>
+  <string name="shared_user_title">Pomiń weryfikację wspólnego profilu</string>
+  <string name="shared_user_summary">Umożliwia instalację aplikacji współdzielących to samo konto systemowe, nawet jeśli mają różne podpisy. (<b>\"Wyłącz porównywanie podpisów&#x201D; musi być również włączone</b>).</string>
   <string name="disable_verification_agent_title">Wyłącz agenta weryfikacji pakietów</string>
   <string name="disable_verification_agent_summary">np. Google Play Protect</string>
 </resources>
