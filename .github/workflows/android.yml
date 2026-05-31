@@ -23,7 +23,7 @@ jobs:
         cache: 'gradle'
 
     - name: Write key
-      if: github.event_name != 'pull_request' && github.ref == 'refs/heads/PL'
+      if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/PL' || github.event_name == 'workflow_dispatch')
       run: |
         if [ ! -z "${{ secrets.SIGNING_KEY }}" ]; then
         echo releaseStorePassword='${{ secrets.KEY_STORE_PASSWORD }}' >> gradle.properties
@@ -48,7 +48,7 @@ jobs:
         path: app/build/outputs/apk
 
     - name: Upload to Releases
-      if: github.event_name != 'pull_request'
+      if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/PL' || github.event_name == 'workflow_dispatch')
       uses: ncipollo/release-action@v1
       with:
         artifacts: "app/build/outputs/apk/release/CorePatch-PL.apk,app/build/outputs/apk/debug/CorePatch-PL-debug.apk"
