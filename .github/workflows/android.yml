@@ -1,4 +1,4 @@
-name: CorePatch
+name: Android CI
 
 on:
   push:
@@ -36,27 +36,8 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew assembleRelease assembleDebug
 
-    - name: Rename APK
-      if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
-      run: |
-        mv app/build/outputs/apk/release/app-release.apk app/build/outputs/apk/release/CorePatch.apk
-        mv app/build/outputs/apk/debug/app-debug.apk app/build/outputs/apk/debug/CorePatch-debug.apk
-
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
-        name: CorePatch
+        name: outputs
         path: app/build/outputs/apk
-   
-    - name: Release
-      if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
-      uses: softprops/action-gh-release@v1
-      with:
-        files: app/build/outputs/apk/**/*.apk
-        tag_name: CorePatch-4.9
-        generate_release_notes: true
-        make_latest: true
-        replace_existing: true
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_
-        TOKEN }}
