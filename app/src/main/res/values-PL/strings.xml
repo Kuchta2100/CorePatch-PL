@@ -5,7 +5,7 @@
   <string name="downgr">Zezwól na obniżenie wersji</string>
   <string name="downgr_summary">Zezwala na obniżenie wersji aplikacji</string>
   <string name="authcreak">Wyłącz weryfikację skrótu</string>
-  <string name="authcreak_summary">Umożliwia instalację aplikacji po zmodyfikowaniu pliku w APK \n(ignoruje błąd nieprawidłowego skrótu)</string>
+  <string name="authcreak_summary">Umożliwia instalację aplikacji po zmodyfikowaniu pliku APK \n(ignoruje błąd nieprawidłowego skrótu)</string>
   <string name="digestCreak">Wyłącz porównywanie podpisów</string>
   <string name="digestCreak_summary">Zezwala na ponowną instalację aplikacji z innymi podpisami</string>
   <string name="exactSigCheck">Wyłącz dokładne dopasowanie podpisu</string>
@@ -17,7 +17,7 @@
   <string name="config_error">Inicjalizacja konfiguracji nie powiodła się</string>
   <string name="not_supported">Wygląda na to, że używasz nieaktualnej wersji Vector lub Vector nie jest włączony. Zaktualizuj Vector lub spróbuj ponownie po jego włączeniu.</string>
   <string name="bypassBlock">Obejście blokady</string>
-  <string name="bypassBlock_summary">Omija listę blokowanych instalacji na niektórych urządzeniach, np. Nothing Phone.</string>
+  <string name="bypassBlock_summary">Pomija listę blokowanych instalacji na niektórych urządzeniach, np. Nothing Phone.</string>
   <string name="miui_usepresig_warn">Korzystanie z zainstalowanych podpisów nie będzie działać w systemie HyperOS, ponieważ jego struktura za bardzo się zmienia. Nie mamy czasu na zaimplementowanie obsługi.</string>
   <string name="usepresig_warn">!! Każdy plik APK może nadpisać zainstalowaną aplikację !!\nZachowaj ostrożność instalując pliki APK z nieznanych źródeł.</string>
   <string name="shared_user_title">Pomiń weryfikację wspólnego użytkownika</string>
