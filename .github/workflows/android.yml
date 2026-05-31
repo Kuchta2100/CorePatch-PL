@@ -25,11 +25,11 @@ jobs:
       if: github.event_name != 'pull_request'
       run: |
         if [ ! -z "${{ secrets.SIGNING_KEY }}" ]; then
-        echo releaseStorePassword='${{ secrets.KEY_STORE_PASSWORD }}' >> gradle.properties
-        echo releaseKeyAlias='${{ secrets.ALIAS }}' >> gradle.properties
-        echo releaseKeyPassword='${{ secrets.KEY_PASSWORD }}' >> gradle.properties
-        echo releaseStoreFile='key.jks' >> gradle.properties
-        echo ${{ secrets.SIGNING_KEY }} | base64 --decode > key.jks
+          echo releaseStorePassword='${{ secrets.KEY_STORE_PASSWORD }}' >> gradle.properties
+          echo releaseKeyAlias='${{ secrets.ALIAS }}' >> gradle.properties
+          echo releaseKeyPassword='${{ secrets.KEY_PASSWORD }}' >> gradle.properties
+          echo releaseStoreFile='key.jks' >> gradle.properties
+          echo "${{ secrets.SIGNING_KEY }}" | base64 --decode > key.jks
         fi
 
     - name: Build with Gradle
@@ -38,7 +38,7 @@ jobs:
     - name: Move and Rename APKs
       run: |
         mkdir -p out_apks
-        find . -type f -name "*.apk" ! -path "*/build-src/*" | while read file; do
+        find . -type f -name "*.apk" ! -path "*/build-src/*" | while read -r file; do
           if [[ "$file" == *"debug"* ]]; then
             cp "$file" "out_apks/CorePatch-PL-debug.apk"
           else
@@ -62,5 +62,5 @@ jobs:
         generate_release_notes: true
         make_latest: true
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_
-        TOKEN }}
+        GITHUB_TOKEN: "${{ secrets.GITHUB_T
+        OKEN }}"
