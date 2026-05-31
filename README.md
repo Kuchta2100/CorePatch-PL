@@ -6,7 +6,8 @@ Moduł Xposed Framework, który wyłącza weryfikację podpisów w systemie Andr
 ![CRAN/METACRAN](https://img.shields.io/cran/l/devtools)
 ### Obsługiwane wersje Androida
 
-Ta wersja jest przeznaczona wyłącznie dla systemu Android 9–16.\nUżywaj najnowszej wersji aplikacji Vector.
+Ta wersja jest przeznaczona wyłącznie dla systemu Android 9–16.
+Używaj najnowszej wersji aplikacji Vector.
 
 ## Funkcje
 
@@ -23,17 +24,19 @@ Umożliwia instalację aplikacji po zmodyfikowaniu pliku APK
 Zezwala na ponowną instalację aplikacji z innymi podpisami
 
 **Wyłącz dokładne dopasowanie podpisu**
-Wyłącza dokładne dopasowanie podpisu między pakietami APK, umożliwiając instalacje, w których każdy fragment APK ma inny podpis. \nWłączaj tylko w razie potrzeby!
+Wyłącza dokładne dopasowanie podpisu między pakietami APK, umożliwiając instalacje, w których każdy fragment APK ma inny podpis. Włączaj tylko w razie potrzeby!
 
 **Użyj zainstalowanych podpisów**
-Zawsze podczas instalacji będą używane podpisy już zainstalowanych aplikacji.\nJest to niezwykle niebezpieczne.
-.\nWłączaj tylko wtedy, gdy jest to absolutnie konieczne!
+Zawsze podczas instalacji będą używane podpisy już zainstalowanych aplikacji.
+Jest to niezwykle niebezpieczne.
+Włączaj tylko wtedy, gdy jest to absolutnie konieczne!
 
 **Obejście blokady**
 Pomija listę blokowanych instalacji na niektórych urządzeniach, np. Nothing Phone.
 
 **Pomiń weryfikację wspólnego użytkownika**
-Umożliwia instalację aplikacji z podpisem innym niż współdzielony przez nich użytkownik (\"Wyłącz porównywanie podpisów” musi być również włączona)
+Umożliwia instalację aplikacji z podpisem innym niż współdzielony przez nich użytkownik.
+("Wyłącz porównywanie podpisów” musi być również włączona)
 
 **Wyłącz agenta weryfikacji pakietów**
 np. Google Play Protect
