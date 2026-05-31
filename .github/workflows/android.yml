@@ -2,6 +2,10 @@ name: CorePatch-PL
 
 on:
   push:
+name: CorePatch-PL
+
+on:
+  push:
     branches: [ PL ]
   pull_request:
   workflow_dispatch:
@@ -37,6 +41,33 @@ jobs:
 
     - name: Rename APK
       if: github.event_name != 'pull_request' && github.ref == 'refs/heads/PL'
+      run: |
+        find app/build/outputs/apk/ -type f -name "*.apk" | while read file; do
+          if [[ "$file" == *"release"* ]]; then
+            mv "$file" "$(dirname "$file")/CorePatch-PL.apk"
+          elif [[ "$file" == *"debug"* ]]; then
+            mv "$file" "$(dirname "$file")/CorePatch-PL-debug.apk"
+          fi
+        done
+     
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: CorePatch-PL
+        path: app/build/outputs/apk       
+  
+    - name: Release
+      if: github.event_name != 'pull_request' && github.ref == 'refs/heads/PL'
+      uses: softprops/action-gh-release@v1
+      with:
+        files: app/build/outputs/apk/**/*.apk
+        tag_name: CorePatch-PL-4.9
+        generate_release_notes: true
+        make_latest: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+: github.event_name != 'pull_request' && github.ref == 'refs/heads/PL'
       run: |
         mv app/build/outputs/apk/release/app-release.apk app/build/outputs/apk/release/CorePatch-PL.apk
         mv app/build/outputs/apk/debug/app-debug.apk app/build/outputs/apk/debug/CorePatch-PL-debug.apk
