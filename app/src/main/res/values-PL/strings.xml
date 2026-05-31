@@ -3,7 +3,7 @@
   <string name="module_description">Łatka rdzenia Androida 9-16</string>
   <string name="corepatch">Ta wersja jest przeznaczona wyłącznie dla systemu Android 9&#x2013;16.\nUżywaj najnowszej wersji aplikacji Vector.</string>
   <string name="downgr">Zezwól na obniżenie wersji</string>
-  <string name="downgr_summary">Zezwól na obniżanie wersji aplikacji</string>
+  <string name="downgr_summary">Zezwól na obniżenie wersji aplikacji</string>
   <string name="authcreak">Wyłącz weryfikację skrótu</string>
   <string name="authcreak_summary">Umożliwia instalację aplikacji po zmodyfikowaniu pliku w APK (ignoruje błąd nieprawidłowego skrótu)</string>
   <string name="digestCreak">Wyłącz porównywanie podpisów</string>
@@ -11,7 +11,7 @@
   <string name="exactSigCheck">Wyłącz dokładne dopasowanie podpisu</string>
   <string name="exactSigCheck_summary">Wyłącza dokładne dopasowanie podpisu między pakietami APK, umożliwiając instalacje, w których każdy fragment APK ma inny podpis. Włączaj tylko w razie potrzeby!</string>
   <string name="UsePreSig">Użyj zainstalowanych podpisów</string>
-  <string name="UsePreSig_summary">Podczas instalacji zawsze używaj podpisów już zainstalowanych aplikacji.\nJest to niezwykle<b>niebezpieczne</b>.\nWłączaj tylko wtedy, gdy jest to absolutnie konieczne!</string>
+  <string name="UsePreSig_summary">Podczas instalacji zawsze używaj podpisów już zainstalowanych aplikacji.\nJest to niezwykle <b>niebezpieczne</b>.\nWłączaj tylko wtedy, gdy jest to absolutnie konieczne!</string>
   <string name="settings">Ustawienia</string>
   <string name="ignore">Ignoruj</string>
   <string name="config_error">Inicjalizacja konfiguracji nie powiodła się</string>
