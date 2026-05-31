@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -56,6 +55,6 @@ jobs:
         tag_name: CorePatch-PL-4.9
         generate_release_notes: true
         make_latest: true
-        replace_existing: true
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_T
+        OKEN }}
