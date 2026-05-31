@@ -53,4 +53,5 @@ jobs:
       with:
         artifacts: "app/build/outputs/apk/release/CorePatch-PL.apk,app/build/outputs/apk/debug/CorePatch-PL-debug.apk"
         tag: "CorePatch-PL-4.9"
+        allowUpdates: "true"
         token: "${{ secrets.GITHUB_TOKEN }}"
