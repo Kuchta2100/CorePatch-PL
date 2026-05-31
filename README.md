@@ -30,7 +30,7 @@ CorePatch oferuje kilka kluczowych funkcji pozwalających ominąć standardowe k
 <br>**Jest to niezwykle niebezpieczne.**
 <br>**Włączaj tylko wtedy, gdy jest to absolutnie konieczne!**
 
-![](https://img.shields.io/badge/Wydanie-Włączaj tylko wtedy, gdy jest to absolutnie konieczne-red)
+![](https://img.shields.io/badge/Wydanie-Włączaj_tylko_wtedy_gdy_jest_to_absolutnie konieczne!-red)
 
 
 **Obejście blokady**:
