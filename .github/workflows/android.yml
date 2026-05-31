@@ -36,17 +36,18 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew assembleRelease assembleDebug
 
-    - name: Upload artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: CorePatch-PL
-        path: app/build/outputs/apk
     - name: Rename APK
       if: github.event_name != 'pull_request' && github.ref == 'refs/heads/PL'
       run: |
         mv app/build/outputs/apk/release/app-release.apk app/build/outputs/apk/release/CorePatch-PL.apk
         mv app/build/outputs/apk/debug/app-debug.apk app/build/outputs/apk/debug/CorePatch-PL-debug.apk
-        
+     
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: CorePatch-PL
+        path: app/build/outputs/apk       
+  
     - name: Release
       if: github.event_name != 'pull_request' && github.ref == 'refs/heads/PL'
       uses: softprops/action-gh-release@v1
