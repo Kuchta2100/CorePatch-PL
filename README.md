@@ -6,7 +6,7 @@ Moduł xposed dla Vector (dawniej LSPosed), który wyłącza weryfikację podpis
 ### Obsługiwane wersje Androida
 
 Ta wersja jest przeznaczona wyłącznie dla systemu Android 9–16.
-<br>**Używaj najnowszej wersji aplikacji Vector.**
+<br>![](https://img.shields.io/badge/INFO-Używaj%20najnowszej%20wersji%20aplikacji%20Vector-blue)
 
 ## Funkcje
 
