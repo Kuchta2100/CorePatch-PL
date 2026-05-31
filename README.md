@@ -40,7 +40,9 @@ CorePatch oferuje kilka kluczowych funkcji pozwalających ominąć standardowe k
 **Pomiń weryfikację wspólnego użytkownika**:
 <br>Umożliwia instalację aplikacji z podpisem innym niż współdzielony przez nich użytkownik.
 ![](https://img.shields.io/badge/INFO-Wyłącz%20porównywanie%20podpisów-blue)
-<br>musi być również włączone
+
+![](https://img.shields.io/badge/musi%20być%20również%20włączone-blue)
+
 
 **Wyłącz agenta weryfikacji pakietów**:
 <br>np. Google Play Protect
