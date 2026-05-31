@@ -30,6 +30,9 @@ CorePatch oferuje kilka kluczowych funkcji pozwalających ominąć standardowe k
 <br>**.**
 <br>**Włączaj tylko wtedy, gdy jest to absolutnie konieczne!**
 
+![](https://img.shields.io/badge/UWAGA-Jest%20to%20niezwykle%20niebezpieczne-red)
+
+
 ![](https://img.shields.io/badge/UWAGA.Włączaj%20tylko%20wtedy,%20gdy%20jest%20to%20absolutnie%20konieczne%21-red)
 
 
