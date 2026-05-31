@@ -14,13 +14,12 @@ CorePatch oferuje kilka kluczowych funkcji pozwalających ominąć standardowe k
 
 **Zezwól na obniżenie wersji**:
 <br>Umożliwia zainstalowanie starszej wersji aplikacji, eliminując błąd: <br>
-https://img.shields.io/badge/INFO-INSTALL%20FAILED%20VERSION_DOWNGRADE-green
+https://img.shields.io/badge/INFO-INSTALL%20FAILED%20VERSION%20DOWNGRADE-green
 
 
 **Wyłącz weryfikację skrótu**:
 <br>Umożliwia instalację aplikacji po zmodyfikowaniu pliku APK
-<br>![](https://img.shields.io/badge/INFO-ignoruje%20błąd%20nieprawidłowego%20skrót-green)
-
+<br>![](https://img.shields.io/badge/INFO-ignoruje%20błąd%20nieprawidłowego%20skrótu-green)
 
 
 
