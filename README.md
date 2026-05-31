@@ -1,5 +1,5 @@
 # CorePatch-PL
-Moduł Xposed Framework, który wyłącza weryfikację podpisów w systemie Android.
+Moduł xposed dla Vector, który wyłącza weryfikację podpisów w systemie Android.
 
 ![Wydanie GitHub (najnowsze według daty)](https://img.shields.io/github/v/release/coderstory/CorePatch)
 ![CRAN/METACRAN](https://img.shields.io/cran/l/devtools)
