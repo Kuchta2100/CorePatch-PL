@@ -5,7 +5,7 @@
   <string name="downgr">Zezwól na obniżenie wersji</string>
   <string name="downgr_summary">Zezwala na obniżenie wersji aplikacji</string>
   <string name="authcreak">Wyłącz weryfikację skrótu</string>
-  <string name="authcreak_summary">Umożliwia instalację aplikacji po zmodyfikowaniu pliku w APK (ignoruje błąd nieprawidłowego skrótu)</string>
+  <string name="authcreak_summary">Umożliwia instalację aplikacji po zmodyfikowaniu pliku w APK \n(ignoruje błąd nieprawidłowego skrótu)</string>
   <string name="digestCreak">Wyłącz porównywanie podpisów</string>
   <string name="digestCreak_summary">Zezwala na ponowną instalację aplikacji z innymi podpisami</string>
   <string name="exactSigCheck">Wyłącz dokładne dopasowanie podpisu</string>
