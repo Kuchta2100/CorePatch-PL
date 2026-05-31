@@ -1,12 +1,11 @@
-# CorePatch
-
-An Xposed Framework module that disables signature verification on Android.
+# CorePatch-PL
+Moduł Xposed Framework, który wyłącza weryfikację podpisów w systemie Android.
 
 ![Android CI](https://github.com/coderstory/CorePatch/workflows/Android%20CI/badge.svg)
 ![GitHub Release (latest by date)](https://img.shields.io/github/v/release/coderstory/CorePatch)
 ![CRAN/METACRAN](https://img.shields.io/cran/l/devtools)
 
-### Supported Android versions
+### Obsługiwane wersje Androida
 
 CorePatch has been developed to support multiple Android versions through different branches.
 
