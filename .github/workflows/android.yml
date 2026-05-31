@@ -33,34 +33,75 @@ jobs:
         echo releaseKeyAlias='${{ secrets.ALIAS }}' >> gradle.properties
         echo releaseKeyPassword='${{ secrets.KEY_PASSWORD }}' >> gradle.properties
         echo releaseStoreFile='key.jks' >> gradle.properties
+name: CorePatch-PL
+
+on:
+  push:
+    branches: [ PL ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Set up JDK 21
+      uses: actions/setup-java@v3
+      with:
+        java-version: 21
+        distribution: 'temurin'
+        cache: 'gradle'
+
+    - name: Write key
+      if: github.event_name != 'pull_request' && github.ref == 'refs/heads/PL'
+      run: |
+        if [ ! -z "${{ secrets.SIGNING_KEY }}" ]; then
+        echo releaseStorePassword='${{ secrets.KEY_STORE_PASSWORD }}' >> gradle.properties
+        echo releaseKeyAlias='${{ secrets.ALIAS }}' >> gradle.properties
+        echo releaseKeyPassword='${{ secrets.KEY_PASSWORD }}' >> gradle.properties
+        echo releaseStoreFile='key.jks' >> gradle.properties
         echo ${{ secrets.SIGNING_KEY }} | base64 --decode > key.jks
         fi
 
     - name: Build with Gradle
       run: ./gradlew assembleRelease assembleDebug
 
-    - name: Rename APK
+    - name: Move and Rename APKs
       if: github.event_name != 'pull_request' && github.ref == 'refs/heads/PL'
       run: |
-        find app/build/outputs/apk/ -type f -name "*.apk" | while read file; do
-          if [[ "$file" == *"release"* ]]; then
-            mv "$file" "$(dirname "$file")/CorePatch-PL.apk"
+        mkdir -p out_apks
+        find . -type f -name "*.apk" ! -path "*/build-src/*" | while read file; do
+          if [[ "$file" == *"unsigned"* ]]; then
+            continue
           elif [[ "$file" == *"debug"* ]]; then
-            mv "$file" "$(dirname "$file")/CorePatch-PL-debug.apk"
+            cp "$file" "out_apks/CorePatch-PL-debug.apk"
+          else
+            cp "$file" "out_apks/CorePatch-PL.apk"
           fi
         done
-     
+
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
         name: CorePatch-PL
-        path: app/build/outputs/apk       
+        path: out_apks/      
   
     - name: Release
       if: github.event_name != 'pull_request' && github.ref == 'refs/heads/PL'
       uses: softprops/action-gh-release@v1
       with:
-        files: app/build/outputs/apk/**/*.apk
+        files: out_apks/*.apk
+        tag_name: CorePatch-PL-4.9
+        generate_release_notes: true
+        make_latest: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+app/build/outputs/apk/**/*.apk
         tag_name: CorePatch-PL-4.9
         generate_release_notes: true
         make_latest: true
