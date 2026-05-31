@@ -1,44 +1,45 @@
 # CorePatch
-An xposed module for Vector (formerly LSPosed) that disables signature verification in Android.
+An Xposed module for Vector (formerly LSPosed) that disables signature verification in the Android OS.
 
-![GitHub Release (latest by date)](https://img.shields.io/github/v/release/coderstory/CorePatch)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/coderstory/CorePatch)
 ![CRAN/METACRAN](https://img.shields.io/cran/l/devtools)
+
 ### Supported Android Versions
 
-This version is only for **Android 9-16.**
-<br>![](https://img.shields.io/badge/INFO-Użyaj%20najczesna%20wsji%20aplikacji%20Vector-blue)
+This version is designed exclusively for **Android 9–16.**
+<br>![](https://img.shields.io/badge/INFO-Use%20the%20latest%20version%20of%20the%20Vector%20app-blue)
 
 ## Features
 
-CorePatch offers several key features that allow you to bypass standard Android installation checks.
+CorePatch offers several key features to bypass standard Android installation checks.
 
- **Allow Downgrade**:
-<br>Allows you to install an older version of the app, eliminating the error:
+**Allow downgrade**:
+<br>Allows installing an older version of an app, eliminating the error: 
 <br>![](https://img.shields.io/badge/INFO-INSTALL__FAILED__VERSION__DOWNGRADE-green)
 
-**Disable Hash Verification**:
-<br>Allows you to install the app after modifying the APK
-<br>![](https://img.shields.io/badge/INFO-ignores%20badge%20hash%20error-green)
+**Disable checksum verification**:
+<br>Allows installing apps after modifying the APK file.
+<br>![](https://img.shields.io/badge/INFO-ignores%20invalid%20checksum%20error-green)
 
-**Disable Signature Comparison**:
-<br>Allows you to reinstall apps with different signatures
+**Disable signature comparison**:
+<br>Allows reinstalling apps with different signatures.
 
-**Disable Exact Signature Match**:
-<br>Disables exact signature matching between APKs, allowing installations where each APK fragment has a different signature.
-<br>![](https://img.shields.io/badge/WARNING!-Enable%20only%20w%20razie%20needs!-red)
+**Disable accurate signature matching**:
+<br>Disables strict signature matching between APK packages, allowing installations where each APK split has a different signature.
+<br>![](https://img.shields.io/badge/WARNING!-Enable%20only%20if%20necessary!-red)
 
 **Use installed signatures**:
 <br>Always uses the signatures of already installed apps during installation.
-<br>![](https://img.shields.io/badge/WARNING!-It's%20extremely%20safe-red)
-<br>![](https://img.shields.io/badge/WARNING!-It's%20absolutely%20necessary-red)
+<br>![](https://img.shields.io/badge/WARNING!-This%20is%20extremely%20dangerous-red)
+<br>![](https://img.shields.io/badge/Enable%20only%20when%20absolutely%20necessary%21-red)
 
-**Bypass**:
-<br>Bypasses the list of blocked installations on some devices, e.g., the Nothing Phone.
+**Bypass lock**:
+<br>Bypasses the installation blocklist on certain devices, e.g., Nothing Phone.
 
- **Skip shared user verification**:
-<br>Allows installation of apps with a signature different from the shared user.
-<br>![](https://img.shields.io/badge/INFO-Wyłącz%20porównanie%20podpisów-blue)
-<br>![](https://img.shields.io/badge/musi%20być%20rownież%20włączone-blue)
+**Skip shared user verification**:
+<br>Allows installing apps with a signature different from their shared user.
+<br>![](https://img.shields.io/badge/INFO-Disable%20signature%20comparison-blue)
+<br>![](https://img.shields.io/badge/must%20also%20be%20enabled-blue)
 
 **Disable package verification agent**:
 <br>e.g., Google Play Protect
