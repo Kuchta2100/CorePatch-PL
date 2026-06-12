@@ -1,4 +1,4 @@
-# CorePatch-PL
+# Core Patch-PL
 Moduł zygisk dla Vector (dawniej LSPosed), który wyłącza weryfikację podpisów w systemie Android.
 
 ![Wydanie GitHub (najnowsze według daty)](https://img.shields.io/github/v/release/coderstory/CorePatch)
