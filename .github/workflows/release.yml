@@ -61,7 +61,7 @@ jobs:
         mkdir -p app/build/outputs/apk/release
         mkdir -p app/build/outputs/apk/debug
         # Uwaga: sprawdź czy pliki faktycznie tu lądują, jeśli nie - użyj find
-        mv app/build/outputs/apk/release/*.apk app/build/outputs/apk/releaseCore-Patch-PL-4.9.2047-release.apk || true
+        mv app/build/outputs/apk/release/*.apk app/build/outputs/apk/release/Core-Patch-PL-4.9.2047-release.apk || true
         mv app/build/outputs/apk/debug/*.apk app/build/outputs/apk/debug/Core-Patch-PL-4.9.2047-debug.apk || true
 
     - name: Upload artifact
