@@ -4,7 +4,6 @@ on:
   workflow_dispatch:
   push:
     branches: [ PL ]
-    tags: [ 4 ]
   pull_request:
   merge_group:
 
@@ -61,8 +60,8 @@ jobs:
         mkdir -p app/build/outputs/apk/release
         mkdir -p app/build/outputs/apk/debug
         # Uwaga: sprawdź czy pliki faktycznie tu lądują, jeśli nie - użyj find
-        mv app/build/outputs/apk/release/*.apk app/build/outputs/apk/release/Core-Patch-PL-4.9-release.apk || true
-        mv app/build/outputs/apk/debug/*.apk app/build/outputs/apk/debug/Core-Patch-PL-4.9-debug.apk || true
+        mv app/build/outputs/apk/release/*.apk app/build/outputs/apk/release/Core-Patch-PL-4.9.2047-release.apk || true
+        mv app/build/outputs/apk/debug/*.apk app/build/outputs/apk/debug/Core-Patch-PL-4.9.2047-debug.apk || true
 
     - name: Upload artifact
       uses: actions/upload-artifact@v4
@@ -74,8 +73,7 @@ jobs:
       if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/PL' || github.event_name == 'workflow_dispatch')
       uses: ncipollo/release-action@v1
       with:
-        artifacts: "app/build/outputs/apk/release/Core-Patch-PL-4.9-release.apk,app/build/outputs/apk/debug/Core-Patch-PL-4.9-debug.apk"
-        tag: "4"
-        name: "Core-Patch-PL 4.9"
+        artifacts: "app/build/outputs/apk/release/Core-Patch-PL-4.9.2047-release.apk,app/build/outputs/apk/debug/Core-Patch-PL-4.9.2047-debug.apk"
+        name: "Core-Patch-PL 4.9.2047"
         allowUpdates: "true"
         token: "${{ secrets.GITHUB_TOKEN }}"
