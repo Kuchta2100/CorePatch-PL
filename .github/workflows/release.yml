@@ -74,9 +74,8 @@ jobs:
       if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/PL' || github.event_name == 'workflow_dispatch')
       uses: ncipollo/release-action@v1
       with:
-        artifacts: "app/build/outputs/apk/
+        artifacts: "app/build/outputs/apk/release/Core-Patch-PL-4.9.2047-release.apk,app/build/outputs/apk/debug/Core-Patch-PL-4.9.2047-debug.apk"
         tag: "4.9"
-release/Core-Patch-PL-4.9.2047-release.apk,app/build/outputs/apk/debug/Core-Patch-PL-4.9.2047-debug.apk"
         name: "Core-Patch-PL 4.9.2047"
         allowUpdates: "true"
         token: "${{ secrets.GITHUB_TOKEN }}"
